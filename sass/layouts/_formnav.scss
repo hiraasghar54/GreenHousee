@@ -1,0 +1,138 @@
+.navigation{
+    position: absolute;
+    top:5rem;
+    
+    left:25rem;
+   &__item{
+       margin: 1rem;
+       display: inline;
+   }
+
+   &__list{
+       list-style: none; 
+   }
+   
+ 
+    &__link{
+       
+        &:link,
+        &:visited{
+           
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            list-style: none;
+            color: $color-grey-dark-2;
+            
+             padding-left:1.6rem;
+            
+        
+            
+        }
+
+        &:active,
+        &:hover{
+            color: $color-white;
+        }
+       
+    }
+    
+        
+    }
+
+
+    .header{
+        position: relative;
+
+        &__logo-box{
+            position:absolute;
+            top: 4rem;
+            left: 5rem;
+
+        }
+        &__logo{
+            height:4rem;
+        }
+    }
+
+    .section-main{
+        padding:15rem 4rem;
+        position: absolute;
+        top:13rem;
+        left: 15rem;
+    }
+
+    .heading-primary{
+     color: $color-white;
+    text-transform: uppercase;
+  
+
+      &__main{
+          font-size:4rem;
+          display: block;
+          font-weight: 700;
+          font-family: normal ,sans-serif;
+          width:89%;
+      }
+      &__paragraph{
+          font-size:1.5rem;
+         
+          font-family: sans-serif;
+          display: block;
+          width:80%;
+          line-height: 3.2rem;
+      }
+    }
+
+ //   .picture{
+      // position: absolute;
+       //top:10rem;
+       //right: 10rem;
+      // width: 18rem;
+    //   height: auto;
+    //    &__1{
+
+          //  background-image: url(../image/pot.jpg);
+      //  }  }
+
+
+    .cards{
+       perspective: 150rem;  //perspective elements must be on parent
+        -moz-perspective: 150rem;   //for firefox browser
+        position: relative;
+        height: 35rem;
+
+        &__side{
+          height: 24rem;
+          width:65%;
+          border-radius: 4.5rem;
+          position: absolute;
+          top:9rem;
+          left:0;
+          box-shadow: 0 1.5rem 2rem rgba($color-black,.5);
+          &--front{
+            background-color: rgba(255,255,255,0.5);
+          }
+
+          &-paragraph{
+            font-size: 1.4rem;
+               color:$color-black;
+               font-weight: 100;
+               position: absolute;
+               left: 8rem;
+               width: 60%;
+               line-height: 2rem;
+            
+           }
+         
+        //&:hover{
+           //  background-color: $color-white;
+        //}
+       
+         
+        }
+       
+        
+
+    }

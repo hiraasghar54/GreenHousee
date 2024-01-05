@@ -1,0 +1,141 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:white;
+}
+#right{
+    float: left;
+    
+    
+    display: block;
+
+    position: fixed;
+   
+    
+   
+
+}
+
+
+#left{
+    float: right;
+    margin-right: 220px;
+    margin-top: 50px;
+    margin-bottom: ;
+    background-color:white;
+    display: block;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 50px;
+
+    border-radius: 1px;
+    height: 510px;
+    width: 580px;
+
+    margin-right: 60px;
+
+    border-radius:0;
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius:60px;
+
+    border-top-right-radius:60px;
+    border-top-left-radius:60px;
+   
+    
+   
+
+}
+
+ /*#form-group{
+    margin-top:15px;
+   
+    margin-right: 10px;
+   
+    margin-left:14px;
+}
+
+
+#form-group input[type="text"]{
+       width:340px;
+       height:47px;
+
+     /*  border-left: hidden;
+       border-bottom: groove;
+       border-top:hidden;
+       border-right: hidden;*/
+      
+        
+       
+
+    
+    
+    
+
+
+
+
+
+
+
+
+ .my-form .form-group h3{
+     font-size: 25px;
+     font-weight: normal;
+     
+     padding-bottom: 40px;
+     margin-left: 12px;
+     line-height: 1.6em;
+
+    font-family: "Lucida Console", "Courier New", monospace;
+
+ }
+
+ /* button h4 font coding-->*/
+
+.my-form{
+    padding: 100px 10px 20px 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+   
+}
+
+.my-form input[type="text"], .my-form input[type="number"] , .my-form input[type="email"]{
+    padding: 8px;
+    width: 250px;
+    height: 45px;
+
+    
+}
+
+.my-form .form-group input[type="submit"]{
+
+    width:120px;
+    height: 40px;
+
+    border-radius:6px;
+      margin-left:9px;
+    margin-top: 10px;
+    background-color:azure;
+
+    font-size: 14px;
+    font-weight:bold;
+
+    
+    border-radius: 5px 5px 5px 5px;
+   cursor: pointer;
+     
+}
+.my-form .form-group input[type="submit"]:hover{
+    background-color:#CCFFCC;
+}
+
+input[id="hi"], input[type="text"], input[type="number"] {
+
+    margin-left: 9px;
+}

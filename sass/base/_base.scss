@@ -1,0 +1,26 @@
+/*now this is partial sass file*/
+
+/*base mai islye hain ye q k ye project ki basic defimations hain*/
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:inherit;
+}
+
+html{
+    //this defines what 1rem is
+    font-size: 62.5%;
+}
+body{
+
+    font-family:"Lato" ,sans-serif;
+    font-weight: 400;
+   /* font-size: 16px;*/
+    line-height: 1.7;
+    color:#777;
+   overflow: hidden;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+}

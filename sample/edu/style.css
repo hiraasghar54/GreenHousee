@@ -1,0 +1,139 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:white;
+}
+#right{
+    float: left;
+    
+    
+    display: block;
+
+    position: fixed;
+   
+    
+   
+
+}
+
+
+#left{
+    float: right;
+    margin-right: 220px;
+    margin-top: 50px;
+    margin-bottom: ;
+    background-color:white;
+    display: block;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 50px;
+
+    border-radius: 1px;
+    height: 510px;
+    width: 580px;
+
+    margin-right: 60px;
+
+    border-radius:0;
+    border-bottom-left-radius:60px;
+    border-bottom-right-radius:60px;
+
+    border-top-right-radius:60px;
+    border-top-left-radius:60px;
+   
+    
+   
+
+}
+.my-form{
+
+    padding: 60px 10px 20px 20px;
+    }
+.my-form .form-group{
+        padding-bottom: 15px;
+       
+    }
+
+    .my-form input[type="text"]{
+        padding: 8px;
+        width: 250px;
+        height: 45px;
+    
+        
+    }
+.my-form .form-group  #gender{
+        padding: 8px;
+        width: 250px;
+        height: 45px;
+        margin-left: 5px;
+    
+        
+    } 
+.my-form .form-group #margin{
+    margin-left: 5px;
+}
+
+
+.my-form .form-group h3{
+    font-size: 25px;
+    font-weight: normal;
+    
+    padding-bottom: 40px;
+    margin-left: 12px;
+    line-height: 1.6em;
+
+   font-family: "Lucida Console", "Courier New", monospace;
+
+    
+
+}
+
+.my-form .form-group #address{
+    padding: 8px;
+    width: 509px;
+    height: 80px;
+
+}
+
+.my-form .form-group input[type="date"]{
+
+    padding: 8px;
+    width: 250px;
+    height: 45px;
+
+}
+
+.my-form .form-group input[type="submit"]{
+
+    width:120px;
+    height: 40px;
+
+    border-radius:6px;
+      margin-left:9px;
+    margin-top: 10px;
+    background-color:azure;
+
+    font-size: 14px;
+    font-weight:bold;
+
+    
+    border-radius: 5px 5px 5px 5px;
+}
+.my-form .form-group input[type="submit"]:hover{
+    background-color:#CCFFCC;
+}
+
+
+
+
+
+
+
+
+
+
+

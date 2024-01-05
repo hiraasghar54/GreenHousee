@@ -1,0 +1,384 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:inherit;
+}
+
+html{
+   
+    font-size: 62.5%;
+}
+
+body{
+	background-color: #eee;
+	color: #999;
+	font-size: 1.6rem;
+    font-family: 'Lato',sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3rem;
+    box-sizing: border-box;
+
+
+}
+.row{
+	max-width: 114rem;
+	margin: 0 auto;
+}
+
+.section-book{
+	padding: 15rem 0;
+    background-image: linear-gradient(to right bottom,rgba(101, 198, 187, 1),rgba(27, 163, 156, 1));
+	
+	
+}
+
+
+.book{
+
+	background-image: linear-gradient(-105deg,
+		                             rgb(#008000) 50%,
+		                             rgb(#008000) 50%,
+		                             transparent 50%),
+	                                 url(../images/hi.jpg);
+    background-size: cover; 
+
+   
+    height:65rem;
+    border-radius: 3px;
+
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.6);
+    
+
+
+}
+.book .book-form{
+	width: 50%;
+	padding: 5rem 6rem;
+	float: right;
+}
+
+.heading-secondary{
+	font-size: 3.4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration:underline;
+	
+
+   display: inline-block;
+   background-image: linear-gradient(to right bottom,#008000,#008000);
+   background-clip:unset;
+   -webkit-background-clip:text;
+   letter-spacing: 2px;
+   color: transparent;
+   animation: headingAnimation .4s;
+   transition: all .2s;
+   
+}
+.heading-secondary:hover{
+	transform: translateX(.1rem) skewX(15deg) skewY(2deg);
+	
+}
+
+@keyframes inputanimation{
+	0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+	}
+	100%{
+       
+       opacity: 1;
+       transform: translateX(0);
+     
+	}
+}
+
+@keyframes headingAnimation{
+	0%{
+		opacity: 0;
+		transform: translateX(-4rem);
+	}
+	80%{
+		transform: translateX(2rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+.u-margin-bottom-medium{
+	margin-bottom: 2rem;
+}
+.u-margin-top-large{
+	margin-top: 2rem;
+}
+.u-margin-top-medium{
+	margin-top: 4rem;
+}
+.u-margin-top-small{
+	margin-top:1.5rem;
+}
+.form .form__group:not(:Last-child){
+	margin-bottom: 1rem;
+}
+
+.form input[type="text"],input[type="email"],input[type="number"]{
+
+	font-size: 1.5rem;
+	font-family: 'Lato',sans-serif;
+	color:inherit;
+	padding: 1.5rem 2rem;
+	border-radius: 15px;
+	background-color: rgba(255,255,255,.5);
+
+	border-bottom: 3px solid transparent;
+	border:none;
+	width: 90%;
+	display: block;
+   
+   animation:inputanimation 2s;
+
+   transition: all .3s;
+
+}
+.form input[type="text"]:focus{
+
+          outline: none;       
+          box-shadow: 0 1.5rem 2rem rgba(0,0,0,.2);
+          border-bottom: 3px solid rgb(0,128,128);
+}
+.form input[type="email"]:focus{
+	      outline: none;       
+          box-shadow: 0 1.5rem 2rem rgba(0,0,0,.2);
+          border-bottom: 3px solid rgb(0,128,128);
+	}
+
+.form input[type="number"]:focus{	
+	      outline: none;       
+          box-shadow: 0 1.5rem 2rem rgba(0,0,0,.2);
+          border-bottom: 3px solid rgb(0,128,128);
+}
+.form input[type="text"]:focus:invalid{
+
+	border-bottom: 3px solid orangered;
+}
+.form input[type="email"]:focus:invalid{
+
+	border-bottom: 3px solid orangered;
+}
+.form input[type="number"]:focus:invalid{
+
+	border-bottom: 3px solid orangered;
+}
+
+.form input[type="text"],input[type="email"]::-webkit-input-placeholder{  
+
+  color: #999;
+}
+
+.form .form__label{
+	font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: .7rem;
+    margin-left:1rem;
+    display: block;
+    color: #999;
+}
+
+.form input:placeholder-shown + .form__label{
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-4rem);
+}
+
+/*radio button */
+.form .form__radio-group{
+	width: 49%;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+.form .form__radio-input{
+
+  display: none;
+}
+
+.form .form__radio-label{
+	font-size: 1.6rem;
+	cursor: pointer;
+
+	position: relative;    /*becoz of radio-button*/
+	padding-left:5.5rem;
+
+	 animation:inputanimation 2s;
+
+}
+.form .form__radio-button{
+	width: 3rem;
+	height: 3rem;
+	border:5px solid rgb(0,128,128);
+	border-radius: 50%;
+   
+     position: absolute;
+
+	display:inline-block; 
+
+	top:-.1.5rem;
+	left:1.5rem;
+	 animation:inputanimation 2s;
+
+}
+.form .form__radio-button::after{
+	content: "";
+	display: block;
+
+	width: 1.3rem;
+	height: 1.3rem;
+
+	border-radius: 50%;
+	position: absolute;
+
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgb(0,128,128);
+
+    opacity: 0;
+    transform: opacity .1s;
+	}
+
+.form .form__radio-input:checked ~ .form__radio-label .form__radio-button::after{
+	opacity: 1;
+
+}
+
+
+.btn,
+.btn:link,
+.btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.3rem 3rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  border-radius: 10rem;
+  background-color: rgb(0,128,128);
+  font-family: 'Lato',sans-serif;
+  color: #fff;
+  position: relative;
+ 
+
+  border:none;
+  cursor: pointer;
+
+
+  margin-left: 2rem;
+
+  transition: all .2s;
+
+}
+
+.btn:hover{
+	/*transform: rotate(23deg) scale(1.2);*/
+	
+	box-shadow: 0 1.5rem 2rem rgba(0,0,0,.2);
+	animation: btnanimation 2s;
+}
+
+
+@keyframes btnanimation{
+	0%{
+		opacity: 0;
+		transform: translateX(-2rem);
+
+	}
+	60%{
+		transform: rotate(180deg);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0) scale(1.1);
+
+	}
+}
+
+.u-center{
+	text-align: center;
+}
+
+*{
+	padding: 0;
+	margin:0 auto;
+
+}
+
+
+.square{
+	width: 90px;
+	height: 90px;
+	background-color:black ;
+	position: relative;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,.1);
+    margin-top: 10px;
+
+	transform: skew(24deg);
+	animation:square 11s linear 2s infinite alternate running;
+	transition: all .2s;
+    animation:animationreverse 11s linear 2s infinite alternate running;
+   position: absolute;
+   top: .5rem;
+   right:4rem;
+
+}
+
+.square__inside{
+	width: 88px;
+	height: 88px;
+	background-color: #fff;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/*
+.square__inside:hover{
+	background-image: linear-gradient(to right bottom ,rgba(126,213,111,0.8),rgba(40,180,131,0.8));
+}*/
+
+
+
+
+@keyframes square{
+
+	0%{
+		
+		transform: rotate(45deg);
+		
+	}
+	100%{
+		opacity: 1;
+		
+		transform: rotate(0);
+
+
+	}
+
+}
+
+@keyframes animationreverse{
+	0%{
+		opacity: 0;
+		transform:rotate(-45deg);
+
+
+	}
+	
+
+	100%{
+		opacity: 1;
+		transform: rotate(0);
+
+	}
+}
